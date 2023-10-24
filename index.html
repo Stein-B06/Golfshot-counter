@@ -19,19 +19,14 @@
     <body>
       <div class="container">
         <h1>Golfshot counter:</h1>
-        <h2 id="count-el">0</h2>
-        <button id="increment-btn" onclick="increment()">GOLF SHOT</button>
-        <button id="save-btn" onclick="save()">NEXT HOLE</button>
-        <button
-          input
-          type="reset"
-          id="reset-btn"
-          onclick="reset()"
-          value="reset-btn"
+       <h2 id="increment-value">Golfshots: 0</h2>
+       <button id="increment-btn" onclick="increment()">GOLFSHOTS</button>
+    <button id="next-hole-btn" onclick="save()">NEXT HOLE</button>
+    <button id="reset-btn" onclick="reset()">Reset</button>
         >
           RESET
         </button>
-        <p id="save-el">Golfshots:</p>
+        <p id="hole-info">Golfshots:</p>
       </div>
       <script src="index.js"></script>
     </body>

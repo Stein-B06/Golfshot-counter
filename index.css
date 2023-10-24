@@ -7,7 +7,7 @@ body {
   max-height: 100vh;
 }
 
-#save-el {
+#hole-info {
   color: white;
   font-size: 20px;
   text-shadow: 1px 1px 2px black, 0 0 1em rgb(15, 16, 15),

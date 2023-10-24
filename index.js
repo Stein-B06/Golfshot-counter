@@ -1,21 +1,27 @@
-let saveEl = document.getElementById("save-el");
-let countEl = document.getElementById("count-el");
-let resetEl = document.getElementById("reset-btn");
-let count = 0;
+let holeNumber = 1;
+let holeInfo = document.getElementById("hole-info");
+let currentNumber = 0;
+let incrementValueDisplay = document.getElementById("increment-value");
 
 function increment() {
-  count += 1;
-  countEl.textContent = count;
+  // Increment the number by 1
+  currentNumber += 1;
+  incrementValueDisplay.textContent = `Golfshots: ${currentNumber}`;
 }
 
 function save() {
-  let countStr = count + " - ";
-  saveEl.textContent += countStr;
-  countEl.textContent = 0;
-  count = 0;
+  // Get the current number and display it along with the current hole number
+  holeInfo.textContent += `(Hole ${holeNumber}) ${currentNumber} - `;
+  holeNumber++;
+  // Reset the current number to 0
+  currentNumber = 0;
+  incrementValueDisplay.textContent = `Golfshots: 0`;
 }
+
 function reset() {
-  saveEl.textContent = "Golfshots:";
-  countEl.textContent = "0";
-  count = 0;
+  // Clear the hole information, reset the hole number, and reset the increment value
+  holeInfo.textContent = "";
+  holeNumber = 1;
+  currentNumber = 0;
+  incrementValueDisplay.textContent = `Golfshots: 0`;
 }
