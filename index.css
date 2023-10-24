@@ -63,3 +63,6 @@ button {
 #reset-btn {
   background: radial-gradient(rgb(23, 22, 22), rgb(232, 104, 104));
 }
+#total-shots {
+  color: aliceblue;
+}
