@@ -13,7 +13,7 @@ let savedTotalShots = parseInt(localStorage.getItem("totalShots")) || 0;
 
 // Set the initial increment value
 currentNumber = savedIncrementValue;
-incrementValueDisplay.textContent = `Increment Value: ${currentNumber}`;
+incrementValueDisplay.textContent = `Current hole: ${currentNumber}`;
 incrementCount = savedIncrementCount;
 incrementCountDisplay.textContent = `Increment Count: ${incrementCount}`;
 totalShotsDisplay.textContent = `Total Shots: ${savedTotalShots}`;
@@ -26,7 +26,7 @@ if (savedHoleInfo) {
 
 function increment() {
   currentNumber += 1;
-  incrementValueDisplay.textContent = `Increment Value: ${currentNumber}`;
+  incrementValueDisplay.textContent = `Current hole: ${currentNumber}`;
   incrementCount++;
   incrementCountDisplay.textContent = `Increment Count: ${incrementCount}`;
 
@@ -36,10 +36,10 @@ function increment() {
 }
 
 function save() {
-  holeInfoDisplay.textContent += `(Hole ${holeNumber}) ${currentNumber} - `;
+  holeInfoDisplay.textContent += `(Hole ${holeNumber} = ${currentNumber}) - `;
   holeNumber++;
   currentNumber = 0;
-  incrementValueDisplay.textContent = `Increment Value: 0`;
+  incrementValueDisplay.textContent = `Current hole: 0`;
 
   // Store hole info, increment count, incrementvalue and total shots in local storage with unique keys
   localStorage.setItem("holeInfo", holeInfoDisplay.textContent);
@@ -57,7 +57,7 @@ function reset() {
   holeInfoDisplay.textContent = "";
   holeNumber = 1;
   currentNumber = 0;
-  incrementValueDisplay.textContent = `Increment Value: 0`;
+  incrementValueDisplay.textContent = `Current hole: 0`;
   incrementCount = 0;
   incrementCountDisplay.textContent = `Increment Count: 0`;
   totalShotsDisplay.textContent = `Total Shots: 0`;

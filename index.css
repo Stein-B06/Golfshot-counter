@@ -1,42 +1,59 @@
 body {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
   margin: 0;
   background-image: url("Golf\ green.jpg");
   background-size: cover;
   font-family: "Public Sans", sans-serif;
   font-weight: bold;
   text-align: center;
-  max-height: 100vh;
+  min-height: 100vh;
+}
+#main {
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgb(94, 214, 110);
 }
 
 #hole-info {
   color: white;
   font-size: 20px;
-  text-shadow: 1px 1px 2px black, 0 0 1em rgb(15, 16, 15),
+  text-shadow: 1px 1px 20px black, 0 0 1em rgb(15, 16, 15),
     0 0 0.5em rgb(3, 3, 77);
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: transparent;
-  max-width: 80%;
-  margin: auto;
+  width: 80%;
+
   padding-right: 20px;
   padding-left: 20px;
-  border: 4px solid rgb(248, 245, 245);
+  /* border: 4px solid rgb(248, 245, 245); */
   border-radius: 10px;
 }
 h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 40px;
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   color: rgb(241, 243, 241);
   text-shadow: 2px 2px 2px rgb(0, 0, 7);
 }
+#increment-count {
+  display: none;
+}
 
 h2 {
-  font-size: 50px;
+  font-size: 30px;
   margin-top: 0;
   margin-bottom: 20px;
   color: white;
@@ -58,28 +75,31 @@ button {
 
 #increment-btn {
   background: radial-gradient(rgb(7, 142, 82), rgb(20, 22, 20));
-  color: rgb(233, 250, 234);
+  color: white;
   font-size: 18px;
 }
 
 #next-hole-btn {
   background: radial-gradient(rgb(2, 73, 2), rgb(53, 169, 61));
-  color: rgb(233, 250, 234);
+  color: white;
   font-size: 18px;
 }
-
+#reset {
+  margin-top: 15px;
+}
 #reset-btn {
   background: radial-gradient(rgb(103, 16, 16), rgb(232, 104, 104));
-  color: rgb(233, 250, 234);
+  color: white;
   font-size: 18px;
 }
 
 #total-shots-btn {
-  color: rgb(242, 248, 243);
+  color: white;
   font-size: 18px;
-  background-color: chartreuse;
+  background-color: rgb(94, 214, 110);
 }
 #total-shots {
-  color: rgb(233, 250, 234);
-  font-size: 18px;
+  color: white;
+  font-size: 46px;
+  margin: 0;
 }
