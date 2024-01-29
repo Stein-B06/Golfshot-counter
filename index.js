@@ -36,7 +36,7 @@ function increment() {
 }
 
 function save() {
-  holeInfoDisplay.textContent += `(Hole ${holeNumber} = ${currentNumber}) - `;
+  holeInfoDisplay.textContent += `-(Hole ${holeNumber} = ${currentNumber}) `;
   holeNumber++;
   currentNumber = 0;
   incrementValueDisplay.textContent = `Current hole: 0`;
