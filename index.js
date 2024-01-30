@@ -48,6 +48,20 @@ function save() {
   localStorage.setItem("incrementValue", currentNumber);
 }
 
+// Display dialog when click on reset button.
+function showResetConfirmation() {
+  let isConfirmed = confirm("Ready to reset?");
+
+  // If user clicks okay, it reset.
+  if (isConfirmed) {
+    document.getElementById("reset-btn").reset();
+
+    // If user clicks cancel. dialog dissappear.
+  } else {
+    return;
+  }
+}
+
 function reset() {
   // Clear data from localStorage and reset displays
   localStorage.removeItem("incrementValue");
