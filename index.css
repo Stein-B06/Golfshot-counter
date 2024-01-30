@@ -27,8 +27,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 20px;
-  /* background-color: rgb(94, 214, 110); */
 }
 
 #hole-info {
@@ -62,12 +60,11 @@ button {
   border: none;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: rgb(245, 246, 249);
+
   text-shadow: 1px 1px 3px black;
   font-weight: bold;
   letter-spacing: 1;
   width: 200px;
-
   border-radius: 5px;
 }
 
@@ -93,7 +90,7 @@ button {
   transform: translatey(2px);
 }
 #reset {
-  margin-top: 15px;
+  margin-top: 25px;
 }
 #reset-btn {
   background: radial-gradient(rgb(103, 16, 16), rgb(232, 104, 104));
