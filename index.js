@@ -36,7 +36,7 @@ function increment() {
 }
 
 function save() {
-  holeInfoDisplay.textContent += `-(Hole ${holeNumber} = ${currentNumber}) `;
+  holeInfoDisplay.textContent += `(Hole ${holeNumber} = ${currentNumber})-`;
   holeNumber++;
   currentNumber = 0;
   incrementValueDisplay.textContent = `Current hole: 0`;
@@ -54,7 +54,7 @@ function showResetConfirmation() {
 
   // If user clicks okay, it reset.
   if (isConfirmed) {
-    document.getElementById("reset-btn").reset();
+    document.getElementById("reset-btn");
 
     // If user clicks cancel. dialog dissappear.
   } else {
@@ -68,7 +68,7 @@ function reset() {
   localStorage.removeItem("incrementCount");
   localStorage.removeItem("totalShots");
   localStorage.removeItem("holeInfo");
-  holeInfoDisplay.textContent = "";
+  holeInfoDisplay.textContent = "Golfshots per hole:";
   holeNumber = 1;
   currentNumber = 0;
   incrementValueDisplay.textContent = `Current hole: 0`;
