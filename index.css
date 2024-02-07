@@ -130,3 +130,9 @@ button {
   font-size: 30px;
   margin: 0;
 }
+#footer {
+  margin-top: auto;
+  text-align: center;
+  height: 30px;
+  color: white;
+}
