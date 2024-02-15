@@ -15,15 +15,19 @@ body {
   background-position: center;
   border-radius: 50%;
   margin-top: 10px;
+  margin-bottom: 5px;
   width: 100px;
   height: 100px;
 }
 
 .container {
+  background-color: rgb(37, 171, 13);
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 10px;
+  padding: 10px 10px 40px 10px;
+  border-radius: 21px;
 }
 
 /* Styling for the add golfshots & next hole button section */
@@ -31,13 +35,22 @@ body {
 #main {
   gap: 15px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+}
+
+#count {
+  display: flex;
+  height: fit-content;
+}
+#golf-shots {
+  color: white;
 }
 
 #hole-info {
-  background: radial-gradient(rgb(7, 142, 82), rgb(20, 22, 20));
+  display: flex;
+  flex-direction: column;
   color: white;
   font-size: 20px;
   padding: 10px 5px;
@@ -66,10 +79,39 @@ h1 {
   margin-top: 0;
   margin-bottom: 20px;
   color: rgb(243, 245, 244);
-  background: radial-gradient(rgb(7, 92, 54), rgb(43, 117, 43));
 }
 
-button {
+#increment-btn {
+  border: none;
+  color: white;
+  font-size: 23px;
+  margin: 15px;
+  background: transparent;
+  box-shadow: 0px 0px 5px rgb(233, 234, 231);
+}
+#increment-btn:active {
+  box-shadow: 0px 0px 2px rgb(39, 70, 11);
+  transform: translatey(1px);
+}
+
+#decrement-btn {
+  border: none;
+  color: white;
+  font-size: 23px;
+  margin: 15px;
+  background: transparent;
+  box-shadow: 0px 0px 5px rgb(233, 234, 231);
+}
+#decrement-btn:active {
+  box-shadow: 0px 0px 2px rgb(39, 70, 11);
+  transform: translatey(1px);
+}
+
+#next-hole-btn {
+  background: radial-gradient(rgb(7, 142, 82), rgb(20, 22, 20));
+  color: white;
+  font-size: 18px;
+  box-shadow: 1px 1px 4px rgb(218, 220, 217);
   border: none;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -78,24 +120,6 @@ button {
   letter-spacing: 1;
   width: 200px;
   border-radius: 5px;
-}
-
-#increment-btn {
-  background: radial-gradient(rgb(7, 142, 82), rgb(20, 22, 20));
-  color: white;
-  font-size: 18px;
-  box-shadow: 1px 1px 4px rgb(218, 220, 217);
-}
-#increment-btn:active {
-  box-shadow: 1px 0 2px rgb(39, 70, 11);
-  transform: translatey(2px);
-}
-
-#next-hole-btn {
-  background: radial-gradient(rgb(7, 142, 82), rgb(20, 22, 20));
-  color: white;
-  font-size: 18px;
-  box-shadow: 1px 1px 4px rgb(218, 220, 217);
 }
 #next-hole-btn:active {
   box-shadow: 1px 0 2px rgb(39, 70, 11);
@@ -109,6 +133,14 @@ button {
   color: white;
   font-size: 18px;
   box-shadow: 1px 1px 4px rgb(218, 220, 217);
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-shadow: 1px 1px 3px black;
+  font-weight: bold;
+  letter-spacing: 1;
+  width: 200px;
+  border-radius: 5px;
 }
 #reset-btn:active {
   box-shadow: 1px 0 2px rgb(39, 70, 11);
@@ -118,8 +150,16 @@ button {
 #total-shots-btn {
   color: white;
   font-size: 18px;
-  background-color: rgb(64, 187, 80);
+  background: radial-gradient(rgb(7, 142, 82), rgb(20, 22, 20));
   box-shadow: 1px 1px 4px rgb(218, 220, 217);
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-shadow: 1px 1px 3px black;
+  font-weight: bold;
+  letter-spacing: 1;
+  width: 200px;
+  border-radius: 5px;
 }
 #total-shots-btn:active {
   box-shadow: 1px 1px 2px rgb(39, 70, 11);
