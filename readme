@@ -6,7 +6,7 @@ A simple tool for the golf round, to keep track of golfshots for each hole the i
 
 How to Use:
 "Current hole" display: Shows the number of golfshots on the current hole.
-ADD GOLFSHOTS: Click on the "ADD GOLFSHOTS" button to increment the count of golfshots.
+GOLFSHOTS: Click on the "+" or "-" to increment/decrement golfshots to the count of golfshots.
 NEXT HOLE: Click the "Next HOLE" button when finish adding golfshots for current hole, ready for the next hole.
 "Golfshots per hole" display: Shows the count for golfshots on each hole.
 "Total shots" Display: Displays the total count of golfshots for the golf round.
