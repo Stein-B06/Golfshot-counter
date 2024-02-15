@@ -30,8 +30,7 @@ body {
   border-radius: 21px;
 }
 
-/* Styling for the add golfshots & next hole button section */
-
+/* Styling for the -/+ golfshots & next hole button section */
 #main {
   gap: 15px;
   display: flex;
@@ -42,13 +41,13 @@ body {
 
 #count {
   display: flex;
-  height: fit-content;
 }
 
 #golf-shots {
   color: white;
 }
 
+/* The golfshots per hole display*/
 #hole-info {
   display: flex;
   flex-direction: column;
@@ -57,6 +56,7 @@ body {
   padding: 10px 5px;
   border-radius: 5px;
   margin: 12px;
+  max-width: 400px;
 }
 
 h1 {
@@ -73,6 +73,7 @@ h1 {
   display: none;
 }
 
+/* The current hole info*/
 #increment-value {
   border-radius: 5px;
   font-size: 30px;
@@ -127,27 +128,6 @@ h1 {
   box-shadow: 1px 0 2px rgb(39, 70, 11);
   transform: translatey(2px);
 }
-#reset {
-  margin-top: 25px;
-}
-#reset-btn {
-  background: radial-gradient(rgb(103, 16, 16), rgb(232, 104, 104));
-  color: white;
-  font-size: 18px;
-  box-shadow: 1px 1px 4px rgb(218, 220, 217);
-  border: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-shadow: 1px 1px 3px black;
-  font-weight: bold;
-  letter-spacing: 1;
-  width: 200px;
-  border-radius: 5px;
-}
-#reset-btn:active {
-  box-shadow: 1px 0 2px rgb(39, 70, 11);
-  transform: translatey(2px);
-}
 
 #total-shots-btn {
   color: white;
@@ -172,6 +152,27 @@ h1 {
   font-size: 30px;
   margin: 10px 0;
 }
+
+#reset-btn {
+  margin-top: 25px;
+  background: radial-gradient(rgb(103, 16, 16), rgb(232, 104, 104));
+  color: white;
+  font-size: 18px;
+  box-shadow: 1px 1px 4px rgb(218, 220, 217);
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-shadow: 1px 1px 3px black;
+  font-weight: bold;
+  letter-spacing: 1;
+  width: 200px;
+  border-radius: 5px;
+}
+#reset-btn:active {
+  box-shadow: 1px 0 2px rgb(39, 70, 11);
+  transform: translatey(2px);
+}
+
 #footer {
   margin-top: auto;
   text-align: center;
