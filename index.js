@@ -48,7 +48,6 @@ function decrement() {
 
 decrementBtn.addEventListener("click", () => {
   incrementCount--;
-  updateIncrementValue();
 });
 
 function save() {
