@@ -44,6 +44,7 @@ body {
   display: flex;
   height: fit-content;
 }
+
 #golf-shots {
   color: white;
 }
@@ -89,6 +90,7 @@ h1 {
   background: transparent;
   box-shadow: 0px 0px 5px rgb(233, 234, 231);
 }
+
 #increment-btn:active {
   box-shadow: 0px 0px 2px rgb(39, 70, 11);
   transform: translatey(1px);
