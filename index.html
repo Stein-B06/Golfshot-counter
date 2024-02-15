@@ -29,9 +29,11 @@
 
         <h2 id="increment-value">Current Hole</h2>
         <div id="main">
-          <button id="increment-btn" onclick="increment()">
-            ADD GOLFSHOTS
-          </button>
+          <div id="count">
+            <button id="decrement-btn" onclick="decrement()">-</button>
+            <h3 id="golf-shots">Golfshots</h3>
+            <button id="increment-btn" onclick="increment()">+</button>
+          </div>
           <button id="next-hole-btn" onclick="save()">NEXT HOLE</button>
         </div>
 

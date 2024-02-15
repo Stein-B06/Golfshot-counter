@@ -1,10 +1,12 @@
 let holeNumber = 1;
 let currentNumber = 0;
 let incrementCount = 0;
-let incrementValueDisplay = document.getElementById("increment-value");
-let incrementCountDisplay = document.getElementById("increment-count");
-let totalShotsDisplay = document.getElementById("total-shots");
-let holeInfoDisplay = document.getElementById("hole-info");
+const incrementValueDisplay = document.getElementById("increment-value");
+const incrementCountDisplay = document.getElementById("increment-count");
+const totalShotsDisplay = document.getElementById("total-shots");
+const holeInfoDisplay = document.getElementById("hole-info");
+const decrementBtn = document.getElementById("decrement-btn");
+const incrementBtn = document.getElementById("increment-btn");
 
 // Load the increment count and total shots from localStorage
 let savedIncrementValue = parseInt(localStorage.getItem("incrementValue")) || 0;
@@ -34,6 +36,20 @@ function increment() {
   localStorage.setItem("incrementValue", currentNumber);
   localStorage.setItem("incrementCount", incrementCount);
 }
+function decrement() {
+  currentNumber -= 1;
+  incrementValueDisplay.textContent = `Current hole: ${currentNumber}`;
+  incrementCountDisplay.textContent = `decrement Count: ${incrementCount}`;
+
+  // Store the increment value in local storage
+  localStorage.setItem("incrementValue", currentNumber);
+  localStorage.setItem("decrementCount", incrementCount);
+}
+
+decrementBtn.addEventListener("click", () => {
+  incrementCount--;
+  updateIncrementValue();
+});
 
 function save() {
   holeInfoDisplay.textContent += `(Hole ${holeNumber} = ${currentNumber})-`;
